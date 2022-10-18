@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Money Manager</title>
+</head>
+
+<body>
+
+    <!-- Header name Money Manager  -->
+    <header>
+        <div>
+            <h1 class="text-7xl text-center text-blue-500 font-bold mt-16 mb-16">Money Manager</h1>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="grid md:grid-cols-2 sm:grid-cols-1 gap-16">
+            <!-- image  -->
+            <div>
+                <img class="w-auto " src="images/6393734.jpg" alt="">
+            </div>
+
+            <div class="bg-blue-50 text-center ">
+                <!-- Income  -->
+                <div>
+                    <h2 class="text-3xl pt-16 pb-4">Income</h2>
+                    <span>Income: </span>
+                    <input class="bg-gray-200 border-2 border-gray-400 rounded px-2" type="number" name="" id="income-amount">
+                </div>
+                <!-- Expenses  -->
+                <div>
+                    <h2 class="text-3xl pt-8 pb-4">Expenses</h2>
+                    <!-- Food -->
+                    <div class="ml-4 pb-4">
+                        <span>Food: </span>
+                        <input class="bg-gray-200 border-2 border-gray-400 rounded px-2" type="number" name="" id="food-amount">
+                    </div>
+                    <!-- Rent  -->
+                    <div class="ml-4 pb-4">
+                        <span>Rent: </span>
+                        <input class="bg-gray-200 border-2 border-gray-400 rounded px-2 ml-1.5" type="number" name="" id="rent-amount">
+                    </div>
+                    <!-- Clothes  -->
+                    <div>
+                        <span>Clothes: </span>
+                        <input class="bg-gray-200 border-2 border-gray-400 rounded px-2" type="number" name="" id="clothes-amount">
+                    </div>
+                    <!-- Calculate  -->
+                    <button class="bg-blue-500 rounded text-white font-semibold px-8 py-1 mt-8 mb-4 " id="calculate-total">Calculate</button>
+                    <!-- Total Expenses -->
+                    <h4>Total Expenses: <span id="total-expenses">00</span></h4>
+                    <!-- Balance -->
+                    <h4 class="mt-4 mb-4">Balance: <span id="total-balance">00</span></h4>
+                </div>
+                <!-- Saving amount and Remaining Balance -->
+                <div class="mb-16">
+                    <span>Save:</span>
+                    <input class="bg-gray-200 border-2 border-gray-400 rounded px-2 w-24" type="number" name="" id="save-amount">
+                    <span> % </span>
+                    <button class="bg-blue-500 rounded text-white font-semibold px-4 py-1" id="save-button">Save</button>
+                    <h4 class="mt-4">Saving Amount: <span id="saving-amount">00</span></h4>
+                    <h4 class="mt-4">Remaining Balance: <span id="remaining-balance">00</span></h4>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/money.js"></script>
+</body>
+
+</html>
